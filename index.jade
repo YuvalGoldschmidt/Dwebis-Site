@@ -1,0 +1,157 @@
+doctype html
+html
+	head
+		// Global site tag (gtag.js) - Google Analytics
+		script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-125407362-1')
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-125407362-1');
+
+		title Dwebis - Your Digital Department
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="author" content="Dwebis")
+		//Edit this tags
+			meta(name="description" content="")
+			meta(name="keywords" content="")
+			lint(rel="icon" href="#")
+		link(rel="stylesheet" href="style-dist.css" type="text/css")
+		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css")
+		script(src="http://code.jquery.com/jquery-3.3.1.js")
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+		script(src="http://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js")
+		script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', crossorigin='anonymous')
+		script(src="app.js")
+
+	body
+		nav.navbar.navbar-light
+			a.navbar-brand.nav-link(href='#header') Dwebis
+			p.navbar-brand.navbar-corrent Home
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarToggler')
+				span.navbar-toggler-icon
+			div#navbarToggler.collapse.navbar-collapse
+				ul.navbar-nav
+					li.nav-item
+						a.nav-link(href="#header") Home
+					li.nav-item
+						a.nav-link(href="#services") Our Services 
+					li.nav-item
+						a.nav-link(href="#why") Why Us
+					li.nav-item
+						a.nav-link(href="#we") Who We Are
+					li.nav-item
+						a.nav-link(href="#contact") Contact Us
+
+		div.section#header
+			div.section-div
+				p#header-h Dwebis
+				p#header-p Your Digital Department
+				a.header-link.btn.btn-primary(href="https://facebook.com/golyuval" target="_blank") Stay Tuned
+				a.header-link.btn.btn-primary(href="#contact") Contact Us
+		
+		div.section#services
+			div.section-div
+				p#services-h Our Services
+				div.row.justify-content-between#services-row
+					div.col-sm-3.services-col.left.not-active
+						p.services-name Websites/Landing Pages Building
+						p.services-description Design
+						p.services-description Development
+						p.services-description Content Management
+					div.col-sm-3.services-col.center.not-active
+						p.services-name Digital Marketing Management
+						p.services-description Online Presence Building
+						p.services-description Social Media Platforms Management
+						p.services-description Campaigns Planning and Management
+					div.col-sm-3.services-col.right.not-active
+						p.services-name Digital Consulting
+						p.services-description Online Presence Analysis
+						p.services-description Long Term Plans Creation
+						p.services-description Campaigns Planning
+				div.row#services-logos-row
+					div.col-2.col-sm-1.services-logos-col(data-toggle="tooltip" data-placement="top" title="Facebook")
+						div.services-logo
+					div.col-2.col-sm-1.services-logos-col(data-toggle="tooltip" data-placement="top" title="LinkedIn")
+						div.services-logo
+					div.col-2.col-sm-1.services-logos-col(data-toggle="tooltip" data-placement="top" title="Twitter")
+						div.services-logo
+					div.col-2.col-sm-1.services-logos-col(data-toggle="tooltip" data-placement="top" title="Instagram")
+						div.services-logo
+					div.col-2.col-sm-1.services-logos-col(data-toggle="tooltip" data-placement="top" title="Google Adwords")
+						div.services-logo
+					div.col-2.col-sm-1.services-logos-col(data-toggle="tooltip" data-placement="top" title="Blogger")
+						div.services-logo
+					div.col-2.col-sm-1.services-logos-col(data-toggle="tooltip" data-placement="top" title="HTML5")
+						div.services-logo
+					div.col-2.col-sm-1.services-logos-col(data-toggle="tooltip" data-placement="top" title="CSS3")
+						div.services-logo
+					div.col-2.col-sm-1.services-logos-col(data-toggle="tooltip" data-placement="top" title="JavaScript")
+						div.services-logo
+					div.col-2.col-sm-1.services-logos-col(data-toggle="tooltip" data-placement="top" title="Jquery")
+						div.services-logo
+					div.col-2.col-sm-1.services-logos-col(data-toggle="tooltip" data-placement="top" title="AngularJS")
+						div.services-logo
+					div.col-2.col-sm-1.services-logos-col(data-toggle="tooltip" data-placement="top" title="Bootstrap")
+						div.services-logo
+		
+		div.section#why
+			div.section-div
+				p#why-h Why Us?
+				div.row.justify-content-between#why-row
+					div.col-sm-4.why-col.left.not-active
+						img.why-icon(src="img/chart-icon.png")
+						p.why-name Long Lasting Results
+						p.why-description We believe that the crucial part of our work, in order to make it really matter is to make it for the long term. This way, our work will serve you at every stage of your business.
+					div.col-sm-4.why-col.center.not-active
+						img.why-icon(src="img/coins-icon.png")
+						p.why-name Affordable Services
+						p.why-description We all know that small-medium businesses do not have a lot to invest in digital. because of that, we are offering affordable services, in order to have your money focused on your digital management, and not on us.
+					div.col-sm-4.why-col.right.not-active
+						img.why-icon(src="img/computer-icon.png")
+						p.why-name Professional Work
+						p.why-description After working on many projects as individuals, you can be ensured that our work will be professional and you will need to worry no more about your digital management.
+
+		div.section#we
+			div.section-div
+				p#we-h Who We Are
+				p#we-p 
+					| We at Dwebis take care of your digital needs using all of the digital tools there are.
+					br
+					| We believe that Social Media and Online presence is key to your business operation and it’s good management makes the difference between success and failure, and needs professionality and time.
+				div.row.justify-content-around#we-row
+					div.col-sm-4.col-5.we-col
+						img.we-img(src="img/we1.jpg")
+						p.we-name Yuval Goldschmidt
+						p.we-title Partner &amp; CTO
+						a.we-facebook(href="#" target="_blank") Facebook
+					div.col-sm-4.col-5.we-col
+						img.we-img(src="img/we1.jpg")
+						p.we-name Gabriel Hansel
+						p.we-title Partner &amp; CMO
+						a.we-facebook(href="#" target="_blank") Facebook
+		
+		div.section#contact
+			div.section-div
+				p#contact-h Contact Us
+				p#contact-p
+					| Want to get started and schedule a meeting? Get in touch with us!
+					br
+					| First Consulting Hour is Free!
+				form#contact-form
+					div.form-row
+						div.form-group.col-sm-6.col-12
+							label(for="nameInput") Full Name
+							input.form-control#nameInput(type="text" name="name" placeholder="Name" required)
+							div.invalid-feedback Please write your name
+						div.form-group.col-sm-6.col-12
+							label(for="emailInput") Email
+							input.form-control#emailInput(type="email" name="email" placeholder="Email" required)
+							div.invalid-feedback Please write your email
+							div.valid-feedback We'll never share your email with anyone else.
+						div.form-group.col-sm-12.col-12
+							label(for="messageInput") What do you want us to know?
+							textarea.form-control#messageInput(name="message" placeholder="Message Text (Optional)")
+						div.col-sm-12.col-12#contact-button
+							button.btn.btn-primary.btn-block.btn-lg#submit-button(type="submit") Send Message
