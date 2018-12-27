@@ -20,7 +20,7 @@ $(document).ready(function(){
 	$('body').scrollspy({target: '.navbar'});
 
 	$(window).on('activate.bs.scrollspy', function(){
-		$('p.navbar-corrent').text($('li.nav-item a.active').text());
+		$('p#navbar-corrent').text($('li.nav-item a.active').text());
 	})
 
 	$('div#services-row').on('swipeleft', function(){
@@ -55,6 +55,13 @@ $(document).ready(function(){
 	$('[data-toggle="tooltip"]').tooltip();
 
 	$('button[type=submit]').click(function(){
-		$('form').addClass('was-validated');
+		$('form#contact-form').addClass('was-validated');
+		if($('form#contact-form')[0].checkValidity()){
+			$('form#contact-form').trigger('reset').removeClass('was-validated');
+			$('button[type=submit]').removeClass('btn-primary').addClass('btn-success').text('Sent!');
+			setTimeout(function(){
+				$('button[type=submit]').addClass('btn-primary').removeClass('btn-success').text('Send Message');
+			}, 5000);
+		}
 	});
 });

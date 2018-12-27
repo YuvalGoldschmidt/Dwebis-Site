@@ -40,6 +40,24 @@ nav.navbar{
 	padding-right: 0 !important;
 }
 
+a#navbar-logo-link{
+	height: 40px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+img#navbar-logo{
+	height: 60px;
+	margin-top: -10px;
+}
+
+p#navbar-corrent{
+	position: absolute;
+	top: .5rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 div.section{
 	display: flex;
 	justify-content: center;

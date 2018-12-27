@@ -1,14 +1,6 @@
 doctype html
 html
 	head
-		// Global site tag (gtag.js) - Google Analytics
-		script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-125407362-1')
-		script.
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-125407362-1');
-
 		title Dwebis - Your Digital Department
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
@@ -16,7 +8,7 @@ html
 		//Edit this tags
 			meta(name="description" content="")
 			meta(name="keywords" content="")
-			lint(rel="icon" href="#")
+		link(rel="icon" href="img/D-logo.png")
 		link(rel="stylesheet" href="style-dist.css" type="text/css")
 		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css")
 		script(src="http://code.jquery.com/jquery-3.3.1.js")
@@ -27,8 +19,9 @@ html
 
 	body
 		nav.navbar.navbar-light
-			a.navbar-brand.nav-link(href='#header') Dwebis
-			p.navbar-brand.navbar-corrent Home
+			a.navbar-brand.nav-link#navbar-logo-link(href='#header')
+				img#navbar-logo(src="img/logo.png")
+			p.navbar-brand#navbar-corrent Home
 			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarToggler')
 				span.navbar-toggler-icon
 			div#navbarToggler.collapse.navbar-collapse
@@ -155,3 +148,16 @@ html
 							textarea.form-control#messageInput(name="message" placeholder="Message Text (Optional)")
 						div.col-sm-12.col-12#contact-button
 							button.btn.btn-primary.btn-block.btn-lg#submit-button(type="submit") Send Message
+
+		script(src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js")
+		script.
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyB6_lxXapV8zyAjJdazy35XuPXrmTGy8M0",
+				authDomain: "dwebis-f92dd.firebaseapp.com",
+				databaseURL: "https://dwebis-f92dd.firebaseio.com",
+				projectId: "dwebis-f92dd",
+				storageBucket: "dwebis-f92dd.appspot.com",
+				messagingSenderId: "746312311996"
+			};
+			firebase.initializeApp(config);
