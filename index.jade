@@ -11,9 +11,9 @@ html
 		link(rel="icon" href="img/D-logo.png")
 		link(rel="stylesheet" href="style-dist.css" type="text/css")
 		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css")
-		script(src="http://code.jquery.com/jquery-3.3.1.js")
+		script(src="https://code.jquery.com/jquery-3.3.1.js")
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
-		script(src="http://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js")
+		script(src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js")
 		script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', crossorigin='anonymous')
 		script(src="app.js")
 
@@ -116,7 +116,7 @@ html
 				div.row.justify-content-around#we-row
 					div.col-sm-4.col-5.we-col
 						img.we-img(src="img/we1.jpg")
-						p.we-name Yuval Goldschmidt
+						p.we-name Yuval Gold
 						p.we-title Partner &amp; CTO
 						a.we-facebook(href="#" target="_blank") Facebook
 					div.col-sm-4.col-5.we-col
@@ -148,16 +148,3 @@ html
 							textarea.form-control#messageInput(name="message" placeholder="Message Text (Optional)")
 						div.col-sm-12.col-12#contact-button
 							button.btn.btn-primary.btn-block.btn-lg#submit-button(type="submit") Send Message
-
-		script(src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js")
-		script.
-			// Initialize Firebase
-			var config = {
-				apiKey: "AIzaSyB6_lxXapV8zyAjJdazy35XuPXrmTGy8M0",
-				authDomain: "dwebis-f92dd.firebaseapp.com",
-				databaseURL: "https://dwebis-f92dd.firebaseio.com",
-				projectId: "dwebis-f92dd",
-				storageBucket: "dwebis-f92dd.appspot.com",
-				messagingSenderId: "746312311996"
-			};
-			firebase.initializeApp(config);

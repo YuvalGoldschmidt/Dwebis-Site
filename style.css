@@ -319,7 +319,7 @@ a.we-facebook:hover, a.we-facebook:active{
 }
 
 div.section#contact{
-	background-size: 230%;
+	background-size: cover;
 	background-image: linear-gradient(180deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(img/contact-bg.jpg);
 	background-position: center 0;
 }
